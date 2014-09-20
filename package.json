@@ -1,0 +1,36 @@
+{
+  "name": "fxos-console-logs",
+  "version": "0.1.0",
+  "description": "Connect to the FirefoxOS Console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicola/fxos-console.git"
+  },
+  "keywords": [
+    "firefox",
+    "firefoxos",
+    "console",
+    "fxos"
+  ],
+  "author": "Nicola Greco <me@nicola.io> (http://nicolagreco.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicola/fxos-console/issues"
+  },
+  "homepage": "https://github.com/nicola/fxos-console",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "event-stream": "^3.1.7",
+    "fxconsole": "0.0.1",
+    "fxos-connect": "^0.3.0",
+    "fxos-findapp": "^0.3.0",
+    "fxos-start": "^0.3.0",
+    "nomnom": "^1.8.0",
+    "q": "^1.0.1",
+    "repl": "^0.1.3"
+  }
+}
