@@ -11,10 +11,10 @@ manifestURL     App manifest.webapp to deploy
 
 Options:
    -p, --port                           Port of FirefoxOS
-   --errors                             Print error logs
-   --no-colors                          Print error logs
-   --console-stdout <stdout filepath>   Write logs into an external file
    --logs                               Print the console logs
+   --errors                             Print error logs
+   --no-colors                          No syntax highlighting please
+   --console-stdout <stdout filepath>   Write logs into an external file
    --json                               Print logs in json
    --version                            Print version and exit
 ```

@@ -29,21 +29,21 @@ var opts = require("nomnom")
     abbr: 'p',
     help: 'Port of FirefoxOS'
   })
+  .option('logs', {
+    flag: true,
+    help: 'Print the console logs'
+  })
   .option('errors', {
     flag: true,
     help: 'Print error logs'
   })
   .option('no-colors', {
     flag: true,
-    help: 'Print error logs'
+    help: 'No syntax highlighting please'
   })
   .option('console-stdout', {
     help: 'Write logs into an external file',
     metavar: '<stdout filepath>'
-  })
-  .option('logs', {
-    flag: true,
-    help: 'Print the console logs'
   })
   .option('json', {
     flag: true,
