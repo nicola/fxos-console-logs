@@ -14,7 +14,7 @@ function Console(opts, callback) {
     opts.logs = true;
   }
     
-  var promise = FindApp(opts)
+  return FindApp(opts)
     .then(function(app) {
 
       var logs = new stream.Readable({objectMode: true});
@@ -39,14 +39,6 @@ function Console(opts, callback) {
 
       return logs;
 
-    });
-
-    if (callback) {
-      return promise.then(
-        function(app) { callback(null, app); }
-      ).done();
-    }
-    else {
-      return promise;
-    }
+    })
+    .nodeify(callback);
 }
